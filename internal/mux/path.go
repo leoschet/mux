@@ -64,21 +64,6 @@ func (path Path) Match(candidatePath Path) bool {
 	}
 
 	return path.HasPrefix(candidatePath)
-	// for i, pathField := range pathFields {
-	// 	if isParam(pathField) {
-	// 		if candidatePathFields[i] == "" {
-	// 			return false
-	// 		}
-
-	// 		continue
-	// 	}
-
-	// 	if pathField != candidatePathFields[i] {
-	// 		return false
-	// 	}
-	// }
-
-	// return true
 }
 
 // Concatenates the passed elements with the current path string
